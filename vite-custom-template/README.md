@@ -9,9 +9,9 @@ Vite custom template 과제
 그래서 Types에 있는 플러그인을 설치하여 매 페이지마다 import react 를 하지않아도 된다는 점을 파악하게되었습니다.
 
 여기서 제가 궁금 했던 점은 파비콘을 html에 
-<link rel="icon" href="/vite.svg" />
+`<link rel="icon" href="/vite.svg" />`
 로 작성했지만 
-<link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />
+`<link rel="shortcut icon" href="/vite.svg" type="image/x-icon" />`
 이렇게도 가능하다는 것을 알았습니다. 두개의 차이가 궁금해졌습니다.
 
 찾아보니 브라우저 호환성? 이 있다고 하는거 같던데요.. 그 외에도 다른 차이점이 있는지도 궁금합니다.

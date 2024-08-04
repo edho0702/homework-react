@@ -1,0 +1,42 @@
+.product_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 249px;
+    height: 592px;
+    justify-content: space-between;
+}
+.product_info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 12px;
+    color: #898989;
+    font-family: Pretendard;
+}
+.product_img > img {
+    width: 249px;
+    height: 320px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.original_price {
+    text-decoration: line-through;
+}
+.rate {
+    display: flex;
+    gap: 8px;
+    font-size: 22px;
+    color: #fa622f;
+}
+.rate_price {
+    color: #333333;
+}
+
+.review_button {
+    display: flex;
+}

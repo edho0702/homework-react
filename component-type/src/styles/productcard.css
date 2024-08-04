@@ -4,7 +4,6 @@
     gap: 16px;
     width: 249px;
     height: 592px;
-    justify-content: space-between;
 }
 .product_info {
     display: flex;

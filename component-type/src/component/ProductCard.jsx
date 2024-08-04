@@ -36,6 +36,7 @@ export default function ProductCard({ product }) {
                     <p className="review_count">15</p>
                 </a>
             </div>
+
             <CartButton />
         </div>
     );

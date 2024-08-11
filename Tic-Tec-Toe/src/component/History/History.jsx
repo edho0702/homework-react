@@ -1,7 +1,7 @@
 function History() {
     return (
         <>
-            <div>기록</div>
+            <button>기록</button>
         </>
     );
 }

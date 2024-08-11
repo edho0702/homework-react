@@ -1,6 +1,4 @@
 .component {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3);
-    width: 150px;
+    display: flex;
+    flex-flow: row wrap;
 }

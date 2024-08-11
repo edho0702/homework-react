@@ -1,6 +1,7 @@
-import Board from "./../Board/Board";
-import Status from "./../Status/Status";
-import History from "./../History/History";
+import Board from "../Board/Board";
+import Status from "../Status/Status";
+import History from "../History/History";
+import "./Game.module.css";
 
 export default function Game() {
     return (

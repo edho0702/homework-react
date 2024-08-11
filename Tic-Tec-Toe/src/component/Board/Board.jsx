@@ -1,41 +1,30 @@
-import { gameWinner, COUNT, PLAYER, SQUARES, WIN } from "@/constants";
+import { WIN, PLAYERLIST } from "@/constants";
 import Square from "./../Square/Square";
 import S from "./Board.module.css";
-import { useState } from "react";
+import { func, number, arrayOf, oneOf, shape } from "prop-types";
 
-function Board() {
-    const [squares, setSquares] = useState(SQUARES);
+const OneOfPlayerType = oneOf(PLAYERLIST);
+const OneOfPlayerListType = arrayOf(OneOfPlayerType);
+const WinnerInfoType = shape({
+    winner: OneOfPlayerType,
+    condition: arrayOf(number),
+});
 
-    const Play = (index) => () => {
-        if (winner) {
-            alert("GAME OVER");
-            return;
-        }
+Board.propTypes = {
+    squares: OneOfPlayerListType.isRequired,
+    winnerInfo: WinnerInfoType,
+    onPlay: func,
+};
 
-        setSquares((prevSquares) => {
-            const next = prevSquares.map((square, idx) => {
-                return idx === index ? player : square;
-            });
-            return next;
-        });
-    };
-
-    const winner = gameWinner(squares);
-
-    const game = squares.filter(Boolean).length;
-
-    const turn = game % COUNT === 0;
-
-    const player = turn ? PLAYER.ONE : PLAYER.TWO;
-
+function Board({ squares, winnerInfo, onPlay }) {
     return (
         <div className={S.component}>
             {squares.map((square, index) => {
                 const winnerStyles = {
                     backgroundColor: null,
                 };
-                if (winner) {
-                    const [x, y, z] = winner.condition;
+                if (winnerInfo) {
+                    const [x, y, z] = winnerInfo.condition;
 
                     if (index === x || index === y || index === z) {
                         winnerStyles.backgroundColor = WIN;
@@ -46,7 +35,7 @@ function Board() {
                     <Square
                         key={index}
                         style={winnerStyles}
-                        onplay={Play(index)}
+                        onplay={onPlay(index)}
                     >
                         {square}
                     </Square>

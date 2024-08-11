@@ -2,6 +2,7 @@ export const PLAYER = {
     ONE: "🐴",
     TWO: "🐮",
 };
+export const PLAYERLIST = Object.values(PLAYER);
 
 export const SQUARES = Array(9).fill(null);
 

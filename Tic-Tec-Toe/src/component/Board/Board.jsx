@@ -7,8 +7,10 @@ function Board() {
     const [squares, setSquares] = useState(SQUARES);
 
     const Play = (index) => () => {
-        // const winner = gameWinner(squares);
-        // console.log(winner);
+        if (winner) {
+            alert("GAME OVER");
+            return;
+        }
 
         setSquares((prevSquares) => {
             const next = prevSquares.map((square, idx) => {

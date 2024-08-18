@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    flex-flow: column;
+    padding: 16px 20px;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.todo {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+.todowrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.todo label {
+    font-size: 18px;
+    color: var(--Do-it-title);
+}
+.span {
+    font-size: 12px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+
+.label {
+    display: flex;
+    gap: 4px;
+}
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.checkbox:checked {
+    background-image: url("@/assets/icon/Done_on.svg");
+}
+.checkbox:not(:checked) {
+    background-image: url("@/assets/icon/Done_off.svg");
+}
+
+.keepbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.keepbox:checked {
+    background-image: url("@/assets/icon/Archive_on.svg");
+}
+.keepbox:not(:checked) {
+    background-image: url("@/assets/icon/Archive_off.svg");
+}

@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 20, 54);
+    height: 100vh;
+}
+
+.con {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 320px;
+    height: 640px;
+    background-color: var(--viewport);
+    overflow-y: auto;
+    scrollbarwidth: "none";
+    msoverflowstyle: "none";
+}
+.con::-webkit-scrollbar {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

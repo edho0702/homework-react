@@ -1,0 +1,6 @@
+.con {
+    display: flex;
+    flex-flow: column;
+    width: 260px;
+    height: 472px;
+}

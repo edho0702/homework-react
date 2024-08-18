@@ -1,0 +1,46 @@
+:root {
+    font-family: pretendard;
+
+    --black: #00050e;
+    --white: #fff;
+    --blue: #0760fb;
+    --dodgerblue: #4b8dff;
+    --lightblue: #e2ebfa;
+
+    --color-gray-50: #f9f9f9;
+    --color-gray-100: #f4f4f4;
+    --color-gray-200: #d9d9d9;
+    --color-gray-300: #979797;
+    --color-gray-400: #717171;
+    --color-gray-500: #393939;
+
+    --Text-headline: var(--black);
+    --Text-date: var(--color-gray-400);
+
+    --forground: var(--black);
+    --background: var(--white);
+    --viewport: var(--color-gray-50);
+    --primary: var(--blue);
+    --secondary: var(--lightblue);
+
+    --Button-label: var(--lightblue);
+    --Button-background: var(--blue);
+    --Button-secondary-label: var(--blue);
+    --Button-secondary-background: var(--lightblue);
+    --Button-disabled-background: var(--color-gray-200);
+    --Button-disabled-label: var(--color-gray-300);
+
+    --Status-active: var(--blue);
+    --Status-deactive: var(--color-gray-300);
+
+    --Checbox-active: var(--blue);
+    --Checbox-deactive: var(--lightblue);
+
+    --Input-normal: var(--color-gray-300);
+    --Input-focus: var(--blue);
+
+    --Do-it-forground: var(--color-gray-400);
+    --Do-it-background: var(--white);
+    --Do-it-title: var(--blue);
+    --Do-it-divider: var(--color-gray-200);
+}

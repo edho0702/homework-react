@@ -1,0 +1,6 @@
+.con {
+    display: flex;
+    justify-content: center;
+    color: var(--Text-date);
+    font-size: 12px;
+}

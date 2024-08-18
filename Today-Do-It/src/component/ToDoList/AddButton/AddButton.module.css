@@ -1,0 +1,13 @@
+.con {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn {
+    width: 132px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: var(--Button-background);
+    color: var(--Button-label);
+}
